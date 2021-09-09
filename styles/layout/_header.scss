@@ -26,3 +26,59 @@
         }
     }
 }
+
+
+
+//  ................... //////Main page..............
+
+.mainpage{
+    display: flex;
+    z-index: -1;
+}
+
+.mainpage__img{
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+    z-index: inherit;
+}
+
+.mainpage__txt{
+    margin-left: 218px;
+    margin-top: 135px;
+    z-index: inherit;
+}
+
+
+.mainpage__heading{
+    line-height: 58px;
+    font-weight: bold;
+    font-size: 3.2rem;
+    margin-top: 25px;
+}
+
+.mainpage__desc{
+    margin-top: 29px;
+    line-height: 21px;
+    color: $grey;
+}
+
+.mainpage__btn{
+    margin-top: 44px;
+    margin-bottom: 170px;
+}
+
+
+
+.mainpage__trending{
+    font-size: 0.8rem;
+    color: #FF6700;
+    display: flex;
+    align-items: center;
+}
+.mainpage__trending::before {
+    content: '';
+    flex: 0.03;
+    border-bottom: 1px solid #FF6700;
+    margin-right: 5px;
+}
