@@ -66,10 +66,62 @@
       }
     }
   }
-
   &__image {
     position: absolute;
     top: 0;
     right: -18rem;
+  }
+}
+
+.instafeed {
+  .instafeed__images {
+    width: 73%;
+    margin: mul(35) mul(250) mul(0) mul(182);
+    height: 670px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .heading {
+    text-align: center;
+    @include font(2rem, bold);
+  }
+}
+
+.newsletter {
+  margin: 45px auto;
+  text-align: center;
+  width: 50%;
+
+  .heading {
+    @include font(2rem, bold);
+    text-decoration: underline;
+  }
+
+  .details {
+    font-size: 1rem;
+    margin-top: 32px;
+    line-height: 24px;
+    color: gray;
+    margin-bottom: 20px;
+  }
+
+  input {
+    border: none;
+    background-color: $white;
+    color: gray;
+    padding: 21px;
+    width: 50%;
+  }
+
+  button {
+    padding: 20px;
+    background-color: $reddish;
+    border-radius: 3px;
+    border: border(1px, solid, $reddish);
+    color: white;
+    width: mul(145);
   }
 }
