@@ -29,56 +29,44 @@
 
 
 
-//  ................... //////Main page..............
+//  ................... //Main page..............
 
-.mainpage{
-    display: flex;
-    z-index: -1;
-}
+.hero-section{
+    @include flex(space-between, stretch);
 
-.mainpage__img{
-    position: absolute;
-    right: 0;
-    margin-right: 40px;
-    z-index: inherit;
-}
+    &__text{
+        margin: 13.5rem auto auto 21.8rem;
 
-.mainpage__txt{
-    margin-left: 218px;
-    margin-top: 135px;
-    z-index: inherit;
-}
+        .hero-section-text{
 
+            &__trending{
+                @include font(1.28em);
+                color: $tia-maria;
+                @include flex(flex-start, center);
+            }
+            &__trending::before {
+                content: '';
+                flex: 0.045;
+                border-bottom: border(1px, solid, $tia-maria);
+                margin-right: 0.5rem;
+            }
+            &__heading{
+                @include font(5.12rem, bold, 0, 5.8rem);
+                margin-top: 2.5rem;
+            }
+            &__details{
+                color: $grey;
+                @include font(1.76rem,0,0,2.4rem);
+                overflow: hidden;
+                white-space:pre-line
+            }
+            &__btn{
+                margin: 3.9rem 0 16.8rem 0;
+            }
+        }
+    }
 
-.mainpage__heading{
-    line-height: 58px;
-    font-weight: bold;
-    font-size: 3.2rem;
-    margin-top: 25px;
-}
-
-.mainpage__desc{
-    margin-top: 29px;
-    line-height: 21px;
-    color: $grey;
-}
-
-.mainpage__btn{
-    margin-top: 44px;
-    margin-bottom: 170px;
-}
-
-
-
-.mainpage__trending{
-    font-size: 0.8rem;
-    color: #FF6700;
-    display: flex;
-    align-items: center;
-}
-.mainpage__trending::before {
-    content: '';
-    flex: 0.03;
-    border-bottom: 1px solid #FF6700;
-    margin-right: 5px;
+    &__image{
+        margin: 0 4rem 0 0;
+    }
 }
