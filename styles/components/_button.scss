@@ -1,0 +1,14 @@
+.btn{
+    &--primary{
+        background-color:$tia-maria;
+        font-size: 1.44rem;
+        border-radius: 0.3rem;
+        border: 0.1rem solid $tia-maria;
+        color: $white;
+        padding: 1.3rem 3.2rem;
+        &:hover{
+            background-color:$white;
+            color: $tia-maria;
+        }
+    }
+}
