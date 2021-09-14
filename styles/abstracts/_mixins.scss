@@ -1,18 +1,18 @@
-@mixin pos-mid($width: 73%, $margin : 0) {
-    width: $width;
-    margin: $margin auto;
-}
-
 @mixin flex($justify-content, $align-items, $direction: row) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify-content;
-    align-items: $align-items;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
 }
 
-@mixin font($size : inherit, $wt : normal, $letter-spacing: normal, $line-height: normal) {
-    font-size : $size;
-    font-weight : $wt;
-    letter-spacing: $letter-spacing;
-    line-height: $line-height;
+@mixin font(
+  $size: inherit,
+  $wt: normal,
+  $letter-spacing: normal,
+  $line-height: normal
+) {
+  font-size: $size;
+  font-weight: $wt;
+  letter-spacing: $letter-spacing;
+  line-height: $line-height;
 }

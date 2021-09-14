@@ -1,72 +1,71 @@
-.navbar{
-    @include pos-mid;
+.navbar {
+  @include flex(space-between, center);
+  margin-top: 3.936rem;
+
+  &__menu {
+    display: flex;
+  }
+
+  &__menu-links {
     @include flex(space-between, center);
-    margin-top: 3.936rem;
+  }
 
-    &__menu{
-        display: flex;
-    }
+  &__menu-link {
+    @include font(1.5rem, normal);
+    color: $grey;
+    cursor: pointer;
+    background: none;
+    border: none;
+    margin: 1rem 3.65rem 0 0;
+    max-width: 8rem;
+    padding: 0 0 1rem 0;
 
-    &__menu-links{
-        @include flex(space-between, center);
+    &--active,
+    &:hover {
+      color: $tia-maria;
+      border-bottom: 0.2rem solid $tia-maria;
     }
-    &__menu-link{
-        @include font(1.5rem, normal);
-        color: $grey;
-        cursor: pointer;
-        background: none;
-        border: none;
-        margin: 1rem 3.65rem 0 0;
-        max-width: 8rem;
-        padding: 0 0 1rem 0;
-    
-        &--active, &:hover{
-            color: $tia-maria;
-            border-bottom: border(0.2rem, solid, $tia-maria);
-        }
-    }
+  }
 }
 
+.hero-section {
+  @include flex(space-between, stretch);
 
+  &__text {
+    margin: 13.5rem auto auto 21.8rem;
 
-//  ................... //Main page..............
+    .hero-section-text {
+      &__trending {
+        @include font(1.28em);
+        color: $tia-maria;
+        @include flex(flex-start, center);
 
-.hero-section{
-    @include flex(space-between, stretch);
-
-    &__text{
-        margin: 13.5rem auto auto 21.8rem;
-
-        .hero-section-text{
-
-            &__trending{
-                @include font(1.28em);
-                color: $tia-maria;
-                @include flex(flex-start, center);
-            }
-            &__trending::before {
-                content: '';
-                flex: 0.045;
-                border-bottom: border(1px, solid, $tia-maria);
-                margin-right: 0.5rem;
-            }
-            &__heading{
-                @include font(5.12rem, bold, 0, 5.8rem);
-                margin-top: 2.5rem;
-            }
-            &__details{
-                color: $grey;
-                @include font(1.76rem,0,0,2.4rem);
-                overflow: hidden;
-                white-space:pre-line
-            }
-            &__btn{
-                margin: 3.9rem 0 16.8rem 0;
-            }
+        &::before {
+          content: "";
+          flex: 0.045;
+          border-bottom: 1px solid $tia-maria;
+          margin: 0 0.5rem 0 0;
         }
-    }
+      }
 
-    &__image{
-        margin: 0 4rem 0 0;
+      &__heading {
+        @include font(5.12rem, bold, 0, 5.8rem);
+        margin: 2.5rem 0 0 0;
+      }
+
+      &__details {
+        @include font(1.76rem, 0, 0, 2.4rem);
+        color: $grey;
+        margin: 3.9rem 0 0 0;
+      }
+
+      &__btn {
+        margin: 3.9rem 0 16.8rem 0;
+      }
     }
+  }
+
+  &__image {
+    margin: 0 4rem 0 0;
+  }
 }
