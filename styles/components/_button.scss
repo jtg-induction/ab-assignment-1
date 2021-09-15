@@ -15,7 +15,8 @@
     background-color: $white;
     color: $tia-maria;
     &:hover {
-      background-color: #ffe3d1;
+      background-color: $tia-maria;
+      color: $white;
     }
   }
 }
