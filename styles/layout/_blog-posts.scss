@@ -1,0 +1,84 @@
+.blogpost {
+  margin-top: 10rem;
+
+  &__heading {
+    @include font(3rem, bold);
+    text-align: center;
+  }
+
+  &__blogcards {
+    @include flex(center, center);
+  }
+
+  &__blogcard {
+    // width: 31%;
+    margin: 1%;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 1px $shadow-color;
+  }
+  &__arrows {
+    text-align: center;
+  }
+
+  .slides {
+    display: none;
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+.blogcard {
+  &__blog-by {
+    border-left: border(3px, solid, $tia-maria);
+    margin-top: 3rem;
+    padding: 0 3rem;
+    color: $grey;
+    font-size: 1.5rem;
+    span {
+      color: $tia-maria;
+      font-size: 1.7rem;
+    }
+  }
+  &__blog-details {
+    margin: 0 3rem 3rem 3rem;
+
+    .heading {
+      margin-top: 1rem;
+      margin-left: 5px;
+      @include font(2.4em, bold, 0, 3rem);
+    }
+
+    .desc {
+      margin-top: 2.8rem;
+      @include font(1.5em, 0, 0, 2rem);
+      color: $grey;
+    }
+
+    .btn--invert {
+      margin-top: 3rem;
+    }
+  }
+}
