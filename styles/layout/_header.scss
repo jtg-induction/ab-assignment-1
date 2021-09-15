@@ -1,6 +1,7 @@
 .navbar {
   @include flex(space-between, center);
-  margin-top: 3.936rem;
+  background-color: $background-shade;
+  padding-top: 3.936rem;
 
   &__menu {
     display: flex;
@@ -29,10 +30,12 @@
 }
 
 .hero-section {
-  @include flex(space-between, stretch);
+  @include flex($justify-content: center, $align-items: flex-start);
+  background-color: $background-shade;
 
   &__text {
-    margin: 13.5rem auto auto 21.8rem;
+    max-width: 60rem;
+    padding: 6.7rem 0;
 
     .hero-section-text {
       &__trending {
@@ -44,28 +47,27 @@
           content: "";
           flex: 0.045;
           border-bottom: 1px solid $tia-maria;
-          margin: 0 0.5rem 0 0;
         }
       }
 
       &__heading {
         @include font(5.12rem, bold, 0, 5.8rem);
-        margin: 2.5rem 0 0 0;
+        word-wrap: break-word;
       }
 
       &__details {
         @include font(1.76rem, 0, 0, 2.4rem);
         color: $grey;
-        margin: 3.9rem 0 0 0;
       }
+    }
 
-      &__btn {
-        margin: 3.9rem 0 16.8rem 0;
-      }
+    & > * {
+      margin-bottom: 3rem;
     }
   }
 
   &__image {
-    margin: 0 4rem 0 0;
+    position: relative;
+    left: 7rem;
   }
 }

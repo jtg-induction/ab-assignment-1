@@ -1,4 +1,8 @@
-@mixin flex($justify-content, $align-items, $direction: row) {
+@mixin flex(
+  $justify-content: flex-start,
+  $align-items: flex-start,
+  $direction: row
+) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify-content;
@@ -15,4 +19,13 @@
   font-weight: $wt;
   letter-spacing: $letter-spacing;
   line-height: $line-height;
+}
+
+@mixin line-clamp($no-of-lines) {
+  overflow: hidden;
+  -moz-text-align-last: justify;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $no-of-lines;
+  -webkit-box-orient: vertical;
 }
