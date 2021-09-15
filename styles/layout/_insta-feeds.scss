@@ -1,0 +1,59 @@
+.instafeed {
+  margin-top: 6rem;
+  &__heading {
+    text-align: center;
+    @include font(3.2rem, bold);
+    margin-bottom: 3rem;
+  }
+
+  &__images {
+    @include flex(0, 0, column);
+    flex-wrap: wrap;
+    margin: 0 20rem;
+    height: 62rem;
+    img {
+      width: 25%;
+    }
+  }
+}
+
+.newsletter {
+  margin: 9rem auto 4.5rem auto;
+  text-align: center;
+  width: 50%;
+
+  &__heading {
+    @include font(3.2rem, bold);
+    text-decoration: underline;
+  }
+
+  &__desc {
+    @include font(1.6rem, 0, 0, 2.4rem);
+    color: $grey;
+    margin: 3.2rem 0 2rem 0;
+    padding: 0 12rem;
+  }
+
+  &__input-box {
+    @include font(1.4rem);
+    border: none;
+    background-color: $background-shade-dark;
+    color: $grey;
+    padding: 2.1rem;
+    width: 50%;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__btn {
+    border: none;
+    background: none;
+    padding: 2.2rem 3rem;
+    background-color: $tia-maria;
+    border-radius: 3px;
+    border: 0.1rem, solid, $tia-maria;
+    color: $white;
+  }
+}
