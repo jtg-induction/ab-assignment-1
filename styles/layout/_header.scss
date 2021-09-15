@@ -34,14 +34,17 @@
   background-color: $background-shade;
 
   &__text {
-    max-width: 60rem;
-    padding: 6.7rem 0;
+    max-width: 70rem;
+    padding: 13.5rem 0 0 0;
+    position: relative;
+    z-index: 4;
 
     .hero-section-text {
       &__trending {
         @include font(1.28em);
-        color: $tia-maria;
         @include flex(flex-start, center);
+        color: $tia-maria;
+        margin-bottom: 2rem;
 
         &::before {
           content: "";
@@ -53,21 +56,20 @@
       &__heading {
         @include font(5.12rem, bold, 0, 5.8rem);
         word-wrap: break-word;
+        padding-bottom: 3rem;
       }
 
       &__details {
         @include font(1.76rem, 0, 0, 2.4rem);
         color: $grey;
+        padding-bottom: 4rem;
       }
-    }
-
-    & > * {
-      margin-bottom: 3rem;
     }
   }
 
   &__image {
-    position: relative;
-    left: 7rem;
+    position: absolute;
+    top: 0;
+    right: -18rem;
   }
 }
