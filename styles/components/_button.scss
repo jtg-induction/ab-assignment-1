@@ -11,4 +11,12 @@
       color: $tia-maria;
     }
   }
+  &--invert {
+    background-color: $white;
+    color: $tia-maria;
+    &:hover {
+      background-color: $tia-maria;
+      color: $white;
+    }
+  }
 }
