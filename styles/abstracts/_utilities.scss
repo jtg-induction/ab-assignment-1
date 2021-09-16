@@ -1,5 +1,13 @@
-.ellipsis{
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.container {
+  width: 73%;
+  margin: 0 auto;
+}
+.relative-position {
+  position: relative;
 }

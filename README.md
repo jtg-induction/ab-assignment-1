@@ -9,7 +9,6 @@ JTGPOD home page built using HTML, SCSS and Javascript.
 3. webpack and related packages are used
 4. All stylesheets are in css folder and main.scss is root file
 
-
 # How to start?
 
 for nvm version lock, use node version 14.17.6
@@ -20,19 +19,17 @@ After installing nvm
 in your .nvmrc file, add the version 14.17.6
 and perform nvm use
 if npm required version is not perform nvm install
- 
- when nvm lock is performed then,
 
--> in your cmd/terminal perform
-    1. npm install
-    2. npm start
+when nvm lock is performed then,
 
+-> in your cmd/terminal perform 1. npm install 2. npm start
 
 and you are good to go!
 
 # Credits
+
 -> Collaborators :
-        Shivam Aggarwal
-        Tushar garg
-        Mainak pandit
-        Arjun Bhatt
+Shivam Aggarwal
+Tushar garg
+Mainak pandit
+Arjun Bhatt
