@@ -19,4 +19,14 @@
       color: $white;
     }
   }
+
+  &--small {
+    padding: 1.3rem 2.2rem;
+  }
+}
+
+.btn--arrow {
+  margin: 3.5rem 1rem;
+  background-color: $white;
+  border: none;
 }
