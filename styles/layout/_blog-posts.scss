@@ -12,8 +12,7 @@
   }
 
   &__blogcard {
-    margin: 1rem;
-    width: 33.33%;
+    margin: 1%;
     text-align: left;
     border-radius: 0.5rem;
     box-shadow: 0 0 2rem 0.1rem $shadow-color;
@@ -47,7 +46,7 @@
 
     .heading {
       @include font(2.4em, bold, 0, 3.5rem);
-      @include line-clamp(4);
+      @include line-clamp(3);
       margin-top: 0.5rem;
     }
 

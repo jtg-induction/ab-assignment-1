@@ -4,7 +4,7 @@
 @import "abstracts/variables", "abstracts/mixins", "abstracts/utilities";
 
 // 2. Base stuff
-@import "base/reset", "base/base", "base/typography";
+@import "base/_reset", "base/base", "base/typography";
 
 // 3. Layout-related sections
 @import "layout/header", "layout/latest-blogs", "layout/blog-posts",

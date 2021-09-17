@@ -1,0 +1,75 @@
+.navbar {
+  @include flex(space-between, center);
+  background-color: $background-shade;
+  padding-top: 3.936rem;
+
+  &__menu {
+    display: flex;
+  }
+
+  &__menu-links {
+    @include flex(space-between, center);
+  }
+
+  &__menu-link {
+    @include font(1.5rem, normal);
+    color: $grey;
+    cursor: pointer;
+    background: none;
+    border: none;
+    margin: 1rem 3.65rem 0 0;
+    max-width: 8rem;
+    padding: 0 0 1rem 0;
+
+    &--active,
+    &:hover {
+      color: $tia-maria;
+      border-bottom: 0.2rem solid $tia-maria;
+    }
+  }
+}
+
+.hero-section {
+  @include flex($justify-content: center, $align-items: flex-start);
+  background-color: $background-shade;
+
+  &__text {
+    max-width: 70rem;
+    padding: 13.5rem 0 0 0;
+    position: relative;
+    z-index: 4;
+
+    .hero-section-text {
+      &__trending {
+        @include font(1.28em);
+        @include flex(flex-start, center);
+        color: $tia-maria;
+        margin-bottom: 2rem;
+
+        &::before {
+          content: "";
+          flex: 0.045;
+          border-bottom: 0.1rem solid $tia-maria;
+        }
+      }
+
+      &__heading {
+        @include font(5.12rem, bold, 0, 5.8rem);
+        word-wrap: break-word;
+        padding-bottom: 3rem;
+      }
+
+      &__details {
+        @include font(1.76rem, 0, 0, 2.4rem);
+        color: $grey;
+        padding-bottom: 4rem;
+      }
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    right: -18rem;
+  }
+}
