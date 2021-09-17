@@ -5,12 +5,8 @@
 }
 
 .container {
-  width: 73%;
+  max-width: 117rem;
   margin: 0 auto;
-}
-
-.relative-position {
-  position: relative;
 }
 
 %fading {
