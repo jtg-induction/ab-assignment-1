@@ -1,11 +1,11 @@
 .header {
   position: relative;
-  min-height: 76rem;
-  background-color: $background-shade;
+  min-height: 83rem;
+  background-color: $background-shade-dark;
 }
 .navbar {
   @include flex(space-between, center);
-  padding-top: 3.936rem;
+  padding: 4rem 0 3rem;
   &__menu {
     display: flex;
   }
@@ -18,9 +18,9 @@
     cursor: pointer;
     background: none;
     border: none;
-    margin: 1rem 3.65rem 0 0;
     max-width: 8rem;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
+    margin-right: 3.65rem;
     &--active,
     &:hover {
       color: $tia-maria;
@@ -29,16 +29,20 @@
   }
 }
 .hero-section {
-  @include flex($align-items: flex-start);
   position: relative;
   &__text {
     max-width: 70rem;
-    padding: 13.5rem 0 0;
+    padding: 10.5rem 0 0;
     position: relative;
-    z-index: 4;
+    z-index: 1;
+  }
+  .hero-image {
+    max-width: 100%;
+    height: auto;
   }
   &__image {
     position: absolute;
+    top: 0;
     right: -18rem;
   }
   .hero-section__text {
@@ -49,19 +53,18 @@
       margin-bottom: 2rem;
       &::before {
         margin-right: 1rem;
-        width: 2.5rem;
-        height: 0.2rem;
-        background: $tia-maria;
+        min-width: 2.5rem;
+        border-bottom: 0.2rem solid $tia-maria;
         content: "";
       }
     }
     &__heading {
-      @include font(5.12rem, bold, 0, 5.8rem);
+      @include font(5.12rem, bold, $line-height: 5.8rem);
       word-wrap: break-word;
       padding-bottom: 3rem;
     }
     &__details {
-      @include font(1.76rem, 0, 0, 2.4rem);
+      @include font($size: 1.76rem, $line-height: 2.4rem);
       color: $grey;
       padding-bottom: 4rem;
     }

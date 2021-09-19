@@ -2,6 +2,7 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  max-width: 10rem;
 }
 
 .container {
@@ -34,5 +35,19 @@
     to {
       opacity: 1;
     }
+  }
+}
+.footer-list-alignment {
+  color: $grey;
+  flex: 0.5;
+  li {
+    @include font(1.44rem, normal);
+    margin-top: 0.2rem;
+    padding: 1rem 0 1.2rem;
+  }
+  li:first-child {
+    @include font(1.66rem, normal);
+    color: $black;
+    margin: 0.7rem 0 1.2rem;
   }
 }
