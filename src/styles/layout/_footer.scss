@@ -1,7 +1,7 @@
 .footer {
   @include flex;
   position: relative;
-  top: 6.1rem;
+  top: 6.5rem;
   left: 5.9rem;
   &__details {
     flex: 0.4;
@@ -50,11 +50,12 @@
   }
 }
 .company-name {
-  margin: 12rem auto;
-  padding-top: 6rem;
+  display: block;
+  position: relative;
+  top: 12.8rem;
+  padding-top: 5.6rem;
   text-align: center;
   font-size: 1.44rem;
   border-top: 1px solid $grey;
   opacity: 0.5;
-  max-width: 117rem;
 }

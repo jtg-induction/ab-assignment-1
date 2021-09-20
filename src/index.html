@@ -1,275 +1,437 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png/icon" href="./assets/images/mic.png"/>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      type="image/png/icon"
+      href="./assets/images/mic.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>JTGPOD | Home</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="navbar container">
-            <a class="navbar__logo" href="#" title="JTGPOD">
-                <img src="./assets/images/mic.png" alt="icon">
-                <img src="./assets/images/jtgpod.png" alt="JTGPOD">
-            </a>
-            <nav class="navbar__menu">
-                <ul class="navbar__menu-links">
-                    <li class="navbar__menu-link navbar__menu-link--active ellipsis">
-                        <a href="#" title="Home">Home</a>
-                    </li>
-                    <li class="navbar__menu-link ellipsis">
-                        <a href="#" title="About">About</a>
-                    </li>
-                    <li class="navbar__menu-link ellipsis">
-                        <a href="#" title="Blog">Blog</a>
-                    </li>
-                    <li class="navbar__menu-link ellipsis">
-                        <a href="#" title="Pages">Pages</a>
-                    </li>
-                    <li class="navbar__menu-link ellipsis">
-                        <a href="#" title="Contact">Contact</a>
-                    </li>
-                </ul>
-                <button type="button" title="Subscribe" class="btn btn--primary">Subscribe</button>
-            </nav>
+      <div class="navbar container">
+        <a class="navbar__logo" href="#" title="JTGPOD">
+          <img src="./assets/images/mic.png" alt="icon" />
+          <img src="./assets/images/jtgpod.png" alt="JTGPOD" />
+        </a>
+        <nav class="navbar__menu">
+          <ul class="navbar__menu-links">
+            <li class="navbar__menu-link navbar__menu-link--active ellipsis">
+              <a href="#" title="Home">Home</a>
+            </li>
+            <li class="navbar__menu-link ellipsis">
+              <a href="#" title="About">About</a>
+            </li>
+            <li class="navbar__menu-link ellipsis">
+              <a href="#" title="Blog">Blog</a>
+            </li>
+            <li class="navbar__menu-link ellipsis">
+              <a href="#" title="Pages">Pages</a>
+            </li>
+            <li class="navbar__menu-link ellipsis">
+              <a href="#" title="Contact">Contact</a>
+            </li>
+          </ul>
+          <button type="button" title="Subscribe" class="btn btn--primary">
+            Subscribe
+          </button>
+        </nav>
+      </div>
+      <section class="hero-section container">
+        <div class="hero-section__text">
+          <div class="hero-section__text__trending">Trending Blog</div>
+          <h1 class="hero-section__text__heading">
+            Dreams of an unique ideas scattered through a deserted.
+          </h1>
+          <p class="hero-section__text__details">
+            Lorem ipsum dolor sit amet conseusto saepe atque vel Rerum
+            delectus,eitiis eveniet beatae eaque.Pariatur, cupiditate! Ullam,
+            ags sga uibus.
+          </p>
+          <button class="btn btn--primary hero-section-text__btn">
+            Explore
+          </button>
         </div>
-        <section class="hero-section container">
-            <div class="hero-section__text ">
-                <div class="hero-section__text__trending">Trending Blog</div>
-                <h1 class="hero-section__text__heading">
-                    Dreams of an unique ideas scattered through a deserted.
-                </h1>
-                <p class="hero-section__text__details">
-                    Lorem ipsum dolor sit amet conseusto saepe atque vel  Rerum delectus,eitiis
-                    eveniet beatae eaque.Pariatur, cupiditate! Ullam, ags sga uibus.
-                </p>
-                <button class="btn btn--primary hero-section-text__btn">Explore</button>
-            </div>
         <div class="hero-section__image">
-            <img class="hero-image" src="./assets/images/hero-image.png" alt="black human">
-        </div>   
-        </section>
+          <img
+            class="hero-image"
+            src="./assets/images/hero-image.png"
+            alt="black human"
+          />
+        </div>
+      </section>
     </header>
     <section class="latestblogs container">
-        <div class="latestblogs__title">
-            <h2 class="latestblogs__title__text">Latest Blogs</h2>
-            <button class="btn btn--primary latestblogs__title-btn">View All</button>
-        </div>
+      <div class="latestblogs__title">
+        <h2 class="latestblogs__title__text">Latest Blogs</h2>
+        <button class="btn btn--primary latestblogs__title-btn">
+          View All
+        </button>
+      </div>
 
-        <article class="latestblogs__blog">
-            <div class="latestblogs__image">
-                <img src="assets/images/blog-pic-1.png" alt="dog">
-                <div class="latestblogs__image-tag">New</div>
-            </div>
-            <div class="latestblogs__post">
-                <h3 class="latestblogs__post__heading">Visiting my best friend's city for first time</h3>
-                <p class="latestblogs__post__details">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Labore praesqu adipisci quasi culpa odit laboriosam ea, in quisquam.</p>
-                <div class="latestblogs__post-btn"><button class="btn btn--primary btn--big">View</button></div>
-            </div>
-            <div class="latestblogs__timeline">
-                <p># Season 1</p><p># Posted on Sep 3,2020</p><p># audio / goodbyes / life</p>
-            </div>
-        </article>
-        <article class="latestblogs__blog">
-            <div class="latestblogs__image"><img src="assets/images/blog-pic-2.png" alt="books"></div>
-            <div class="latestblogs__post">
-                <h3 class="latestblogs__post__heading">An interesting read I definitely recommend</h3>
-                <p class="latestblogs__post__details">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Labore praesqu adipisci quasi culpa odit laboriosam ea, in quisquam.</p>
-                <div class="latestblogs__post-btn"><button class="btn btn--primary btn--big">View</button></div> 
-            </div>
-            <div class="latestblogs__timeline">
-                <p># Season 1</p><p># Posted on Sep 3,2020</p><p># audio / goodbyes / life</p>
-            </div>
-        </article>
-        <article class="latestblogs__blog">
-            <div class="latestblogs__image"><img src="assets/images/blog-pic-3.png" alt="door"></div>
-            <div class="latestblogs__post">
-                <h3 class="latestblogs__post__heading">What if all my adventures go back home?</h3>
-                <p class="latestblogs__post__details">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Labore praesqu adipisci quasi culpa odit laboriosam ea, in quisquam.</p>
-                <div class="latestblogs__post-btn"><button class="btn btn--primary btn--big">View</button></div> 
-            </div>
-            <div class="latestblogs__timeline">
-                <p># Season 1</p><p># Posted on Sep 3,2020</p><p># audio / goodbyes / life</p>
-            </div>
-        </article>
-        <div class="latestblogs__show-more">
-            <button class="btn btn--invert btn--small">Show More Episodes</button>
+      <article class="latestblogs__blog">
+        <div class="latestblogs__image">
+          <img src="assets/images/blog-pic-1.png" alt="dog" />
+          <div class="latestblogs__image-tag">New</div>
         </div>
+        <div class="latestblogs__post">
+          <h3 class="latestblogs__post__heading">
+            Visiting my best friend's city for first time
+          </h3>
+          <p class="latestblogs__post__details">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.Labore
+            praesqu adipisci quasi culpa odit laboriosam ea, in quisquam.
+          </p>
+          <div class="latestblogs__post-btn">
+            <button class="btn btn--primary btn--big">View</button>
+          </div>
+        </div>
+        <div class="latestblogs__timeline">
+          <p># Season 1</p>
+          <p># Posted on Sep 3,2020</p>
+          <p># audio / goodbyes / life</p>
+        </div>
+      </article>
+      <article class="latestblogs__blog">
+        <div class="latestblogs__image">
+          <img src="assets/images/blog-pic-2.png" alt="books" />
+        </div>
+        <div class="latestblogs__post">
+          <h3 class="latestblogs__post__heading">
+            An interesting read I definitely recommend
+          </h3>
+          <p class="latestblogs__post__details">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.Labore
+            praesqu adipisci quasi culpa odit laboriosam ea, in quisquam.
+          </p>
+          <div class="latestblogs__post-btn">
+            <button class="btn btn--primary btn--big">View</button>
+          </div>
+        </div>
+        <div class="latestblogs__timeline">
+          <p># Season 1</p>
+          <p># Posted on Sep 3,2020</p>
+          <p># audio / goodbyes / life</p>
+        </div>
+      </article>
+      <article class="latestblogs__blog">
+        <div class="latestblogs__image">
+          <img src="assets/images/blog-pic-3.png" alt="door" />
+        </div>
+        <div class="latestblogs__post">
+          <h3 class="latestblogs__post__heading">
+            What if all my adventures go back home?
+          </h3>
+          <p class="latestblogs__post__details">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.Labore
+            praesqu adipisci quasi culpa odit laboriosam ea, in quisquam.
+          </p>
+          <div class="latestblogs__post-btn">
+            <button class="btn btn--primary btn--big">View</button>
+          </div>
+        </div>
+        <div class="latestblogs__timeline">
+          <p># Season 1</p>
+          <p># Posted on Sep 3,2020</p>
+          <p># audio / goodbyes / life</p>
+        </div>
+      </article>
+      <div class="latestblogs__show-more">
+        <button class="btn btn--invert btn--small">Show More Episodes</button>
+      </div>
     </section>
     <section class="blogpost container">
-        <h2 class="blogpost__heading">Blog Posts</h2>
-        <div class="blogpost__blogcards">
-            <div class="slides fade blogpost__blogcard">
-                <div class="blogcard__blog-by">
-                    <div class="name">By Mehedi Hasan <span class="date">Sep 11, 2020</span></div><p class="via">Cantonese Radio</p>
-                </div>
-                <div class="blogcard__blog-details">
-                    <h3 class=heading>Global News Podcast Thai soldier kills many people a shooting rampage</h3>
-                    <p class="desc">Lorem ipsum dolor sit amet conplaceat deleniti minus cupiditate porro voluptates officia. Fugit laudantium neque cumque.....</p>
-                    <button class="btn btn--invert btn--small">Read More</button>
-                </div>
+      <h2 class="blogpost__heading">Blog Posts</h2>
+      <div class="blogpost__blogcards">
+        <div class="slides fade blogpost__blogcard">
+          <div class="blogcard__blog-by">
+            <div class="name">
+              By Mehedi Hasan <span class="date">Sep 11, 2020</span>
             </div>
-            <div class="slides fade blogpost__blogcard">
-                <div class="blogcard__blog-by">
-                    <div class="name">By Mehedi Hasan <span class="date">Sep 11, 2020</span></div><p class="via">Cantonese Radio</p>
-                </div>
-                <div class="blogcard__blog-details">
-                    <h3 class=heading>News Hour - World Health Organization says a new coronavirus cases</h3>
-                    <p class="desc">Lorem ipsum dolor sit amet conplaceat deleniti minus cupiditate porro voluptates officia. Fugit laudantium neque cumque.....</p>
-                    <button class="btn btn--invert btn--small">Read More</button>
-                </div>
-            </div>
-            <div class="slides fade blogpost__blogcard">
-                <div class="blogcard__blog-by">
-                    <div class="name">By Mehedi Hasan <span class="date">Sep 11, 2020</span></div><p class="via">Cantonese Radio</p>
-                </div>
-                <div class="blogcard__blog-details">
-                    <h3 class=heading>Over to you - Programme face the axe substantial financial cutbacks</h3>
-                    <p class="desc">Lorem ipsum dolor sit amet conplaceat deleniti minus cupiditate porro voluptates officia. Fugit laudantium neque cumque.....</p>
-                    <button class="btn btn--invert btn--small">Read More</button>
-                </div>
-            </div>
-            <div class="slides fade blogpost__blogcard">
-                <div class="blogcard__blog-by">
-                    <div class="name">By Mehedi Hasan <span class="date">Sep 11, 2020</span></div><p class="via">Cantonese Radio</p>
-                </div>
-                <div class="blogcard__blog-details">
-                    <h3 class=heading>Global News Podcast Thai soldier kills many people a shooting rampage</h3>
-                    <p class="desc">Lorem ipsum dolor sit amet conplaceat deleniti minus cupiditate porro voluptates officia. Fugit laudantium neque cumque.....</p>
-                    <button class="btn btn--invert btn--small">Read More</button>
-                </div>
-            </div>
-            <div class="slides fade blogpost__blogcard">
-                <div class="blogcard__blog-by">
-                    <div class="name">By Mehedi Hasan <span class="date">Sep 11, 2020</span></div><p class="via">Cantonese Radio</p>
-                </div>
-                <div class="blogcard__blog-details">
-                    <h3 class=heading>News Hour - World Health Organization says a new coronavirus cases</h3>
-                    <p class="desc">Lorem ipsum dolor sit amet conplaceat deleniti minus cupiditate porro voluptates officia. Fugit laudantium neque cumque.....</p>
-                    <button class="btn btn--invert btn--small">Read More</button>
-                </div>
-            </div>      
+            <p class="via">Cantonese Radio</p>
+          </div>
+          <div class="blogcard__blog-details">
+            <h3 class="heading">
+              Global News Podcast Thai soldier kills many people a shooting
+              rampage
+            </h3>
+            <p class="desc">
+              Lorem ipsum dolor sit amet conplaceat deleniti minus cupiditate
+              porro voluptates officia. Fugit laudantium neque cumque.....
+            </p>
+            <button class="btn btn--invert btn--small">Read More</button>
+          </div>
         </div>
-        <div class="blogpost__arrows">
-            <button class="btn--arrow arr-prev"><img src="./assets/images/arrow-left.png" alt="prev"/></button>
-            <button class="btn--arrow arr-next"><img src="./assets/images/arrow-right.png" alt="next"/></button>
-        </div> 
+        <div class="slides fade blogpost__blogcard">
+          <div class="blogcard__blog-by">
+            <div class="name">
+              By Mehedi Hasan <span class="date">Sep 11, 2020</span>
+            </div>
+            <p class="via">Cantonese Radio</p>
+          </div>
+          <div class="blogcard__blog-details">
+            <h3 class="heading">
+              News Hour - World Health Organization says a new coronavirus cases
+            </h3>
+            <p class="desc">
+              Lorem ipsum dolor sit amet conplaceat deleniti minus cupiditate
+              porro voluptates officia. Fugit laudantium neque cumque.....
+            </p>
+            <button class="btn btn--invert btn--small">Read More</button>
+          </div>
+        </div>
+        <div class="slides fade blogpost__blogcard">
+          <div class="blogcard__blog-by">
+            <div class="name">
+              By Mehedi Hasan <span class="date">Sep 11, 2020</span>
+            </div>
+            <p class="via">Cantonese Radio</p>
+          </div>
+          <div class="blogcard__blog-details">
+            <h3 class="heading">
+              Over to you - Programme face the axe substantial financial
+              cutbacks
+            </h3>
+            <p class="desc">
+              Lorem ipsum dolor sit amet conplaceat deleniti minus cupiditate
+              porro voluptates officia. Fugit laudantium neque cumque.....
+            </p>
+            <button class="btn btn--invert btn--small">Read More</button>
+          </div>
+        </div>
+        <div class="slides fade blogpost__blogcard">
+          <div class="blogcard__blog-by">
+            <div class="name">
+              By Mehedi Hasan <span class="date">Sep 11, 2020</span>
+            </div>
+            <p class="via">Cantonese Radio</p>
+          </div>
+          <div class="blogcard__blog-details">
+            <h3 class="heading">
+              Global News Podcast Thai soldier kills many people a shooting
+              rampage
+            </h3>
+            <p class="desc">
+              Lorem ipsum dolor sit amet conplaceat deleniti minus cupiditate
+              porro voluptates officia. Fugit laudantium neque cumque.....
+            </p>
+            <button class="btn btn--invert btn--small">Read More</button>
+          </div>
+        </div>
+        <div class="slides fade blogpost__blogcard">
+          <div class="blogcard__blog-by">
+            <div class="name">
+              By Mehedi Hasan <span class="date">Sep 11, 2020</span>
+            </div>
+            <p class="via">Cantonese Radio</p>
+          </div>
+          <div class="blogcard__blog-details">
+            <h3 class="heading">
+              News Hour - World Health Organization says a new coronavirus cases
+            </h3>
+            <p class="desc">
+              Lorem ipsum dolor sit amet conplaceat deleniti minus cupiditate
+              porro voluptates officia. Fugit laudantium neque cumque.....
+            </p>
+            <button class="btn btn--invert btn--small">Read More</button>
+          </div>
+        </div>
+      </div>
+      <div class="blogpost__arrows">
+        <button class="btn--arrow arr-prev">
+          <img src="./assets/images/arrow-left.png" alt="prev" />
+        </button>
+        <button class="btn--arrow arr-next">
+          <img src="./assets/images/arrow-right.png" alt="next" />
+        </button>
+      </div>
     </section>
     <section class="instafeed">
-        <h2 class="instafeed__title">Instagram feeds</h2>
-        <div class="instafeed__images">
-            <div class="instafeed__image">
-                <img class="instafeed__image__core-image" src="./assets/images/instafeed-7.png" alt="instagram image">
-            </div>
-            <div class="instafeed__image">
-                <img class="instafeed__image__core-image" src="./assets/images/instafeed-9.png" alt="instagram image">
-            </div>
-            <div class="instafeed__image">
-                <img class="instafeed__image__core-image" src="./assets/images/instafeed-4.png" alt="instagram image">
-            </div>
-            <div class="instafeed__image">
-                <img class="instafeed__image__core-image" src="./assets/images/instafeed-6.png" alt="instagram image">
-                <svg class="hook" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                    <path class="hook-props" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-                </svg>
-            </div>
-            <div class="instafeed__image">
-                <img class="instafeed__image__core-image" src="./assets/images/instafeed-10.png" alt="instagram image">
-            </div>
-            <div class="instafeed__image">
-                <img class="instafeed__image__core-image" src="./assets/images/instafeed-2.png" alt="instagram image">
-            </div>
-            <div class="instafeed__image">
-                <img class="instafeed__image__core-image" src="./assets/images/instafeed-8.png" alt="instagram image">
-            </div>
-            <div class="instafeed__image">
-                <img class="instafeed__image__core-image" src="./assets/images/instafeed-5.png" alt="instagram image">
-            </div>
-            <div class="instafeed__image">
-                <img class="instafeed__image__core-image" src="./assets/images/instafeed-1.png" alt="instagram image">
-            </div>
-            <div class="instafeed__image">
-                <img class="instafeed__image__core-image" src="./assets/images/instafeed-3.png" alt="instagram image">
-            </div>
+      <h2 class="instafeed__title">Instagram feeds</h2>
+      <div class="instafeed__images">
+        <div class="instafeed__image">
+          <img
+            class="instafeed__image__core-image"
+            src="./assets/images/instafeed-7.png"
+            alt="instagram image"
+          />
         </div>
+        <div class="instafeed__image">
+          <img
+            class="instafeed__image__core-image"
+            src="./assets/images/instafeed-9.png"
+            alt="instagram image"
+          />
+        </div>
+        <div class="instafeed__image">
+          <img
+            class="instafeed__image__core-image"
+            src="./assets/images/instafeed-4.png"
+            alt="instagram image"
+          />
+        </div>
+        <div class="instafeed__image">
+          <img
+            class="instafeed__image__core-image"
+            src="./assets/images/instafeed-6.png"
+            alt="instagram image"
+          />
+          <svg
+            class="hook"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              class="hook-props"
+              d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+            />
+          </svg>
+        </div>
+        <div class="instafeed__image">
+          <img
+            class="instafeed__image__core-image"
+            src="./assets/images/instafeed-10.png"
+            alt="instagram image"
+          />
+        </div>
+        <div class="instafeed__image">
+          <img
+            class="instafeed__image__core-image"
+            src="./assets/images/instafeed-2.png"
+            alt="instagram image"
+          />
+        </div>
+        <div class="instafeed__image">
+          <img
+            class="instafeed__image__core-image"
+            src="./assets/images/instafeed-8.png"
+            alt="instagram image"
+          />
+        </div>
+        <div class="instafeed__image">
+          <img
+            class="instafeed__image__core-image"
+            src="./assets/images/instafeed-5.png"
+            alt="instagram image"
+          />
+        </div>
+        <div class="instafeed__image">
+          <img
+            class="instafeed__image__core-image"
+            src="./assets/images/instafeed-1.png"
+            alt="instagram image"
+          />
+        </div>
+        <div class="instafeed__image">
+          <img
+            class="instafeed__image__core-image"
+            src="./assets/images/instafeed-3.png"
+            alt="instagram image"
+          />
+        </div>
+      </div>
     </section>
     <section class="newsletter container">
-        <h2 class="newsletter__title">New Blog Every Week!</h2>
-        <p class="newsletter__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur architecto autem molestutem molestiae tempora</p>
-        <form action="#" target="_blank">
-            <input type="email" class="newsletter__input-box" type="email" placeholder="Type Your Email" required>
-            <button type="submit" class="newsletter__btn">Subscribe &rarr;</button>
-        </form>
+      <h2 class="newsletter__title">New Blog Every Week!</h2>
+      <p class="newsletter__desc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+        pariatur architecto autem molestutem molestiae tempora
+      </p>
+      <form action="#" target="_blank">
+        <input
+          type="email"
+          class="newsletter__input-box"
+          type="email"
+          placeholder="Type Your Email"
+          required
+        />
+        <div class="newsletter__btn">
+          <div class="subscribe">Subscribe</div>
+          <div class="right-arrow">&#x2794;</div>
+        </div>
+      </form>
     </section>
-    <footer class="footer container">
+    <footer>
+      <div class="footer container">
         <div class="footer__details">
-            <a href="#">
-                <img src="./assets/images/mic.png" alt="mic"/>
-                <img src="./assets/images/jtgpod.png" alt="pod"/>
-            </a>
-            <p class="footer__details__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit  amet consectetur adipisicing elit
-            </p>
-            <h3 class="footer__details__socials ellipsis">Socials</h3>
-            <a href="#" class="footer__details__social">
-                <img src="./assets/images/facebook.png" alt="social">
-            </a>
-            <a href="#" class="footer__details__social">
-                <img src="./assets/images/linkedin.png" alt="social">
-            </a>
-            <a href="#" class="footer__details__social">
-                <img src="./assets/images/instagram.png" alt="social">
-            </a>
+          <a href="#">
+            <img src="./assets/images/mic.png" alt="mic" />
+            <img src="./assets/images/jtgpod.png" alt="pod" />
+          </a>
+          <p class="footer__details__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit amet
+            consectetur adipisicing elit
+          </p>
+          <h3 class="footer__details__socials ellipsis">Socials</h3>
+          <a href="#" class="footer__details__social">
+            <img src="./assets/images/facebook.png" alt="social" />
+          </a>
+          <a href="#" class="footer__details__social">
+            <img src="./assets/images/linkedin.png" alt="social" />
+          </a>
+          <a href="#" class="footer__details__social">
+            <img src="./assets/images/instagram.png" alt="social" />
+          </a>
         </div>
         <div class="footer__pages footer-list-alignment">
-            <ul class="footer__pages__list">
-                <li class="ellipsis">Pages</li>
-                <li class="ellipsis">
-                    <a href="#">About</a>
-                </li>
-                <li class="ellipsis">
-                    <a href="#">Episode</a>
-                </li>
-                <li class="ellipsis">
-                    <a href="#">Blog</a>
-                </li>
-                <li class="ellipsis">
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
+          <ul class="footer__pages__list">
+            <li class="ellipsis">Pages</li>
+            <li class="ellipsis">
+              <a href="#">About</a>
+            </li>
+            <li class="ellipsis">
+              <a href="#">Episode</a>
+            </li>
+            <li class="ellipsis">
+              <a href="#">Blog</a>
+            </li>
+            <li class="ellipsis">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
         </div>
         <div class="footer__recent-blogs footer-list-alignment">
-            <ul class="footer__recent-blogs__list">
-                <li class="ellipsis">Recent Blogs</li>
-                <li class="ellipsis">
-                    <a href="#">Blog 1</a>
-                </li>
-                <li class="ellipsis">
-                    <a href="#">Blog 1</a>
-                </li>
-                <li class="ellipsis">
-                    <a href="#">Blog 1</a>
-                </li>
-                <li class="ellipsis">
-                    <a href="#">Blog 4</a>
-                </li>
-            </ul>
+          <ul class="footer__recent-blogs__list">
+            <li class="ellipsis">Recent Blogs</li>
+            <li class="ellipsis">
+              <a href="#">Blog 1</a>
+            </li>
+            <li class="ellipsis">
+              <a href="#">Blog 1</a>
+            </li>
+            <li class="ellipsis">
+              <a href="#">Blog 1</a>
+            </li>
+            <li class="ellipsis">
+              <a href="#">Blog 4</a>
+            </li>
+          </ul>
         </div>
         <div class="footer__partners">
-            <p class="footer__partners__musics">Partners</p>
-                <a href="#" class="footer__partners__music">
-                    <img src="./assets/images/google.png" alt="music">
-                </a>
-                <a href="#" class="footer__partners__music">
-                    <img src="./assets/images/apple.png" alt="music">
-                </a>
-                <a href="#" class="footer__partners__music">
-                    <img src="./assets/images/spotify.png" alt="music">
-                </a>
-        </div>    
+          <p class="footer__partners__musics">Partners</p>
+          <a href="#" class="footer__partners__music">
+            <img src="./assets/images/google.png" alt="music" />
+          </a>
+          <a href="#" class="footer__partners__music">
+            <img src="./assets/images/apple.png" alt="music" />
+          </a>
+          <a href="#" class="footer__partners__music">
+            <img src="./assets/images/spotify.png" alt="music" />
+          </a>
+        </div>
+      </div>
+      <div class="company-name container">
+        &copy; 2020 Josh Technology Group
+      </div>
     </footer>
-    <div class="company-name">&copy; 2020 Josh Technology Group</div>
-    </body>
+  </body>
 </html>
