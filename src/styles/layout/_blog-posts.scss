@@ -1,62 +1,53 @@
 .blogpost {
   @extend %fading;
-
   &__heading {
     @include font(3rem, bold);
     text-align: center;
-    margin: 10rem auto 3.5rem auto;
+    margin: 3rem auto 3.5rem;
   }
-
   &__blogcards {
     @include flex(center, center);
   }
-
   &__blogcard {
-    margin: 1%;
+    margin: 1rem;
+    width: 33.33%;
     text-align: left;
     border-radius: 0.5rem;
     box-shadow: 0 0 2rem 0.1rem $shadow-color;
   }
-
   &__arrows {
     text-align: center;
   }
 }
-
 .blogcard {
   &__blog-by {
     border-left: 0.3rem solid $tia-maria;
     margin-top: 3rem;
     padding: 0 3rem;
-
     .name {
-      @include font(1.7rem, 0, 0, 3.5rem);
+      @include font($size: 1.7rem, $line-height: 3.5rem);
       color: $tia-maria;
     }
-
     .date,
     .via {
       @include font(1.5rem);
       color: $grey;
     }
   }
-
   &__blog-details {
-    margin: 0 3rem 3rem 3rem;
-
+    margin: 3rem;
+    margin-top: 0;
     .heading {
-      @include font(2.4em, bold, 0, 3.5rem);
+      @include font(2.4em, bold, $line-height: 3.5rem);
       @include line-clamp(3);
       margin-top: 0.5rem;
     }
-
     .desc {
       @include font(1.5em, 0, 0, 2rem);
       @include line-clamp(3);
       margin-top: 2.7rem;
       color: $grey;
     }
-
     .btn--invert {
       margin-top: 3rem;
     }

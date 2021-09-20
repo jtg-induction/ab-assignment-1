@@ -11,18 +11,23 @@ JTGPOD home page built using HTML, SCSS and Javascript.
 
 # How to start?
 
-for nvm version lock, use node version 14.17.6
-
+You will need nvm to lock your node version.
 To install nvm(Node Version Manager) - [Refer Here](https://github.com/nvm-sh/nvm)
 
-After installing nvm
-in your .nvmrc file, add the version 14.17.6
-and perform nvm use
-if npm required version is not perform nvm install
+To lock your node version, follow these steps in your terminal:
 
-when nvm lock is performed then,
+1.  `nvm install`
+2.  `nvm use`
 
--> in your cmd/terminal perform 1. npm install 2. npm start
+#### For Development build:
+
+1.  `npm install`
+2.  `npm start`
+
+#### For production build
+
+1. `npm install`
+2. `npm run build`
 
 and you are good to go!
 

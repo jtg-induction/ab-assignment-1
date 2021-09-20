@@ -1,0 +1,60 @@
+.footer {
+  @include flex;
+  position: relative;
+  top: 6.1rem;
+  left: 5.9rem;
+  &__details {
+    flex: 0.4;
+    &__text {
+      @include font($size: 1.5rem, $line-height: 2.4rem);
+      color: $grey;
+      margin: 2rem auto;
+    }
+    &__socials {
+      @include font(1.66rem);
+    }
+    &__social {
+      margin: 2rem 2.7rem auto auto;
+      display: inline-block;
+      padding: 1rem 1.2rem;
+      border-radius: 2.5rem;
+      border: 0.1rem solid $tia-maria;
+    }
+    &__socials + &__social {
+      padding: 1rem 1.6rem;
+    }
+  }
+  &__pages {
+    flex: 0.2;
+    &__list {
+      margin-left: 6.1rem;
+      margin-right: 5rem;
+    }
+  }
+  &__recent-blogs {
+    flex: 0.3;
+    &__list {
+      margin-left: 7.1rem;
+      margin-right: 10rem;
+    }
+  }
+  &__partners {
+    flex: 0.4;
+    &__musics {
+      @include font(1.76rem);
+      margin: 1.8rem auto 3rem 5rem;
+    }
+    &__music {
+      margin: auto auto 1rem 5rem;
+    }
+  }
+}
+.company-name {
+  margin: 12rem auto;
+  padding-top: 6rem;
+  text-align: center;
+  font-size: 1.44rem;
+  border-top: 1px solid $grey;
+  opacity: 0.5;
+  max-width: 117rem;
+}

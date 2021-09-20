@@ -1,0 +1,72 @@
+.header {
+  position: relative;
+  min-height: 83rem;
+  background-color: $background-shade-dark;
+}
+.navbar {
+  @include flex(space-between, center);
+  padding: 4rem 0 3rem;
+  &__menu {
+    display: flex;
+  }
+  &__menu-links {
+    @include flex(space-between, center);
+  }
+  &__menu-link {
+    @include font(1.5rem, normal);
+    color: $grey;
+    cursor: pointer;
+    background: none;
+    border: none;
+    max-width: 8rem;
+    padding: 1rem 0;
+    margin-right: 3.65rem;
+    &--active,
+    &:hover {
+      color: $tia-maria;
+      border-bottom: 0.2rem solid $tia-maria;
+    }
+  }
+}
+.hero-section {
+  position: relative;
+  &__text {
+    max-width: 70rem;
+    padding: 10.5rem 0 0;
+    position: relative;
+    z-index: 1;
+  }
+  .hero-image {
+    max-width: 100%;
+    height: auto;
+  }
+  &__image {
+    position: absolute;
+    top: 0;
+    right: -18rem;
+  }
+  .hero-section__text {
+    &__trending {
+      @include font(1.28em);
+      @include flex(flex-start, center);
+      color: $tia-maria;
+      margin-bottom: 2rem;
+      &::before {
+        margin-right: 1rem;
+        min-width: 2.5rem;
+        border-bottom: 0.2rem solid $tia-maria;
+        content: "";
+      }
+    }
+    &__heading {
+      @include font(5.12rem, bold, $line-height: 5.8rem);
+      word-wrap: break-word;
+      padding-bottom: 3rem;
+    }
+    &__details {
+      @include font($size: 1.76rem, $line-height: 2.4rem);
+      color: $grey;
+      padding-bottom: 4rem;
+    }
+  }
+}
