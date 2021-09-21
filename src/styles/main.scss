@@ -1,14 +1,15 @@
 @charset "UTF-8";
 
 // 1. Configuration and helpers
-@import "abstracts/variables", "abstracts/mixins", "abstracts/utilities";
+@import "abstracts/variables", "abstracts/mixins", "abstracts/animations",
+  "abstracts/utilities";
 
 // 2. Base stuff
 @import "base/base", "base/typography";
 
-// 3. Layout-related sections
+// 3. Components
+@import "components/button";
+
+// 4. Layout-related sections
 @import "layout/header", "layout/latest-blogs", "layout/blog-posts",
   "layout/insta-feeds", "layout/footer";
-
-// 4. Components
-@import "components/button";

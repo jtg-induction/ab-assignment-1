@@ -2,11 +2,11 @@
   font-size: 1.44rem;
   border-radius: 0.3rem;
   border: 0.1rem solid $tia-maria;
-  padding: 1.3rem 3.2rem;
   &--primary {
     background-color: $tia-maria;
     color: $white;
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $white;
       color: $tia-maria;
     }
@@ -14,22 +14,27 @@
   &--invert {
     background-color: $white;
     color: $tia-maria;
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $tia-maria;
       color: $white;
     }
   }
-
+  &--arrow {
+    margin: 3.7rem 1rem;
+    background-color: $white;
+    border: none;
+  }
   &--small {
-    padding: 1.3rem 2.2rem;
+    padding: 1.25rem 0;
+    min-width: 11.5rem;
   }
   &--big {
-    padding: 1.25rem 4.2rem;
+    padding: 1.25rem 0;
+    min-width: 13rem;
   }
-}
-
-.btn--arrow {
-  margin: 3.7rem 1rem;
-  background-color: $white;
-  border: none;
+  &--bigger {
+    padding: 1.25rem 0;
+    min-width: 17rem;
+  }
 }

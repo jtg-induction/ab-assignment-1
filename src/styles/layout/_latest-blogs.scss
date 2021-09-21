@@ -7,7 +7,7 @@
   padding-bottom: 3.7rem;
   &__title {
     @include flex(space-between);
-    &-btn {
+    &--btn {
       margin: 5.5rem 7rem 0 0;
     }
     &__text {
@@ -32,7 +32,7 @@
   }
   &__timeline {
     width: 50%;
-    @include flex(center, flex-start, column);
+    @include flex(center, flex-start, column); //bj
     @include font($size: 1.5rem, $line-height: 2.5rem);
     color: $grey;
     border-left: 1px solid $shadow-color;

@@ -37,3 +37,12 @@ ul {
 body {
   line-height: 1;
 }
+.container {
+  max-width: 117rem; //base
+  margin: 0 auto;
+}
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}

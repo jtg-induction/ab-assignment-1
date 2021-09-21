@@ -1,61 +1,73 @@
 .footer {
-  @include flex;
-  position: relative;
-  top: 6.5rem;
-  left: 5.9rem;
+  padding-top: 6.5rem;
+  padding-left: 11.8rem;
   &__details {
-    flex: 0.4;
-    &__text {
-      @include font($size: 1.5rem, $line-height: 2.4rem);
-      color: $grey;
-      margin: 2rem auto;
-    }
-    &__socials {
-      @include font(1.66rem);
-    }
-    &__social {
-      margin: 2rem 2.7rem auto auto;
-      display: inline-block;
-      padding: 1rem 1.2rem;
-      border-radius: 2.5rem;
-      border: 0.1rem solid $tia-maria;
-    }
-    &__socials + &__social {
-      padding: 1rem 1.6rem;
+    max-width: 33rem;
+    display: inline-block;
+  }
+  &__pages,
+  &__recent-blogs,
+  &__partners {
+    display: inline-block;
+  }
+
+  &__pages,
+  &__recent-blogs {
+    color: $grey;
+    li {
+      @include font(1.44rem, normal, normal, 3.6rem);
+      &:first-child {
+        @include font(1.66rem, normal);
+        color: $black;
+        margin-bottom: 2rem;
+      }
     }
   }
   &__pages {
-    flex: 0.2;
-    &__list {
-      margin-left: 6.1rem;
-      margin-right: 5rem;
-    }
+    padding-left: 9rem;
   }
   &__recent-blogs {
-    flex: 0.3;
-    &__list {
-      margin-left: 7.1rem;
-      margin-right: 10rem;
-    }
+    padding-left: 13rem;
   }
   &__partners {
-    flex: 0.4;
-    &__musics {
-      @include font(1.76rem);
-      margin: 1.8rem auto 3rem 5rem;
-    }
-    &__music {
-      margin: auto auto 1rem 5rem;
-    }
+    padding-left: 15rem;
+    height: inherit;
+  }
+  &__company-name {
+    margin-top: 8rem;
+    padding: 5.6rem 0;
+    text-align: center;
+    font-size: 1.44rem;
+    border-top: 1px solid $grey;
+    opacity: 0.5;
   }
 }
-.company-name {
-  display: block;
-  position: relative;
-  top: 12.8rem;
-  padding-top: 5.6rem;
-  text-align: center;
-  font-size: 1.44rem;
-  border-top: 1px solid $grey;
-  opacity: 0.5;
+.details {
+  &__text {
+    @include font($size: 1.5rem, $line-height: 2.4rem);
+    color: $grey;
+    margin: 2rem auto;
+  }
+  &__socials {
+    @include font(1.66rem);
+  }
+  &__social {
+    margin: 2rem 2.7rem auto auto;
+    display: inline-block;
+    padding: 1rem 1.2rem;
+    border-radius: 2.5rem;
+    border: 0.1rem solid $tia-maria;
+  }
+  &__socials + &__social {
+    padding: 1rem 1.6rem;
+  }
+}
+.partners {
+  &__musics {
+    @include font(1.76rem);
+    margin-bottom: 2.8rem;
+  }
+  &__music {
+    display: block;
+  }
 }

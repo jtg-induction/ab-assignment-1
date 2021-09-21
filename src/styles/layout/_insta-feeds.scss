@@ -16,11 +16,11 @@
   &__image {
     position: relative;
     width: 25%;
-    &__core-image {
-      max-width: 100%;
-      height: auto;
-      transform: scale(1.06);
-    }
+  }
+  &__core-image {
+    max-width: 100%;
+    height: auto;
+    transform: scale(1.06);
   }
 }
 .newsletter {
@@ -51,17 +51,9 @@
   form {
     @include flex(center, center);
   }
-  &__btn {
-    @include flex(center, center);
+  &__submit {
+    @include flex(center, center); ///repeating btn
     gap: 0.4rem;
-    border: none;
-    background: none;
-    cursor: pointer;
-    padding: 1rem 2.5rem;
-    background-color: $tia-maria;
-    border-radius: 3px;
-    border: 0.1rem solid $tia-maria;
-    color: $white;
     .right-arrow {
       @include font(3rem);
     }
